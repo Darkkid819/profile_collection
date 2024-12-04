@@ -1,0 +1,27 @@
+log "Galil VAL"
+log "Galil RBV"
+
+lograte 2
+
+hm
+
+
+L3
+sp 10000000
+pa 50000000
+bg
+waitai "Galil RBV", >=, 50000000
+
+t1
+
+pr -30000000
+bg
+waitai "Galil RBV", <=, 20000000, 0, 12
+
+sp 10000000
+pa 0
+bg
+waitai "Galil RBV" <= 0
+
+plot "Galil VAL" "Galil RBV" +100,100,800,600
+N

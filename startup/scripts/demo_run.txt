@@ -1,0 +1,8 @@
+log "Galil VAL"
+log "Galil RBV"
+
+print "Starting Main Script"
+run "sub_script1.txt"
+t1
+run "sub_script2.txt"
+print "Main Script Completed"

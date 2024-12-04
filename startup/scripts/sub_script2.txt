@@ -1,0 +1,5 @@
+sp 3000000
+pa 0
+bg
+waitai "Galil RBV",<=,0
+run "sub_script3.txt"
